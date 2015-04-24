@@ -1,7 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5 col-xs-12">
+				<img src="main-img.jpg" style="position:fixed;top:-14px;left:-15px;"> <!-- style="position:fixed" -->
+			</div>
+
+
+			<div class="col-md-7 col-xs-12">
+				<div class="zigzag">
+					<div class="container">
+						<nav class="navbar navbar-inverse">
+							<div class="container-fluid">
+								<div class="navbar-header">
+									<a class="navbar-brand" href="#">Github</a>
+								</div>
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="#">Home</a></li>
+									<li><a href="#">Skills</a></li>
+									<li><a href="#">Projects</a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+								</ul>
+							</div>
+						</nav>
+
+						<!-- Text and stuff -->
+
+						<h1 class="main-head">
+							Hello,<br>I am Anmol Sinha
+						</h1>
+
+						<h2 class="text-uppercase">
+							Windows Application Developer
+						</h2>
+						<img src="quote.png" class="img-responsive">
+
+						<h2 class="recent-works">Recent Works</h2>
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<img src="spark.png" class="img-thumbnail">
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<img src="cmd.png" class="img-thumbnail">
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<img src="library.png" class="img-thumbnail">
+							</div>
+						</div>
+
+						<ul class="list-inline cust1">
+							<li>
+								<img src="facebook.png" alt="facebook">
+							</li>
+							<li>
+								<img src="github.png" alt="github">
+							</li>
+							<li>
+								<span class="glyphicon glyphicon-envelope dark"></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
+<style>
+
+	.dark
+	{
+		color: #000;
+	}
+	.list-inline.cust1
+	{
+		margin-top: 70px;
+		font-size: 35px;
+	}
+	.zigzag > .container {
+		padding-bottom: 40px;
+		padding-top: 20px;
+	}
+	.zigzag {
+		position: relative;
+		background: #a72f33;
+		margin-right: -15px;
+		color: #fff;
+	}
+
+	.zigzag:before {
+		content: "";
+		position: absolute;
+		width: 10px;
+		height: 100%;
+		left: -10px;
+		background: linear-gradient(45deg, transparent 33.33%, #a72f33 33.33%), linear-gradient(-45deg, #a72f33 66.67%, transparent 66.67%);
+		background-size: 20px 10px;
+	}
+
+	@media (min-width: 1200px) {
+		.container{
+			max-width: 700px;
+		}
+	}
+
+	h2 {
+		font-size: 22px;
+		font-family: 'Roboto Slab', serif;
+	}
+	h1 {
+		font-size: 72px;
+		font-family: 'Roboto Condensed', Helvetica, Times New Roman, sans-serif;
+	}
+
+	.main-head {
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		border-bottom: 3px solid #fff;
+	}
+
+	.recent-works {
+		padding-bottom: 10px;
+		margin-bottom: 30px;
+		font-size: 26px;
+		text-transform: uppercase;
+		border-bottom: 1px solid #fff;
+	}
+
+	@font-face {
+		font-family: "Roboto Condensed";
+		font-style: normal;
+		font-weight: 400;
+		src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url("RobotoCondensed-Regular.ttf") format('truetype');
+	}
+
+	@font-face {
+		font-family: "Roboto Slab";
+		font-style: normal;
+		font-weight: 400;
+		src: local('Roboto Slab'), local('RobotoSlab-Regular'), url("RobotoSlab-Regular.ttf") format('truetype');
+	}
+</style>
 </html>
